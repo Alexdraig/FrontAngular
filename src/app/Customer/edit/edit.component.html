@@ -1,0 +1,54 @@
+<div class="container col-md-6">
+    <div class="card mb-5">
+        <div class="card-header">
+            <h3>Modificar Cliente</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="mb-3">
+                    <label for="" class="form-label">Nombre de la Empresa</label>
+                    <input type="text" class="form-control" [(ngModel)]="customer.company_name" name="company_name">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Contacto</label>
+                    <input type="text" class="form-control" [(ngModel)]="customer.contact_name" name="contact_name">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Rol del Contacto</label>
+                    <input type="text" class="form-control" [(ngModel)]="customer.contact_title" name="contact_title">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" [(ngModel)]="customer.address" name="address">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" [(ngModel)]="customer.city" name="city">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Region</label>
+                    <input type="text" class="form-control" [(ngModel)]="customer.region" name="region">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Codigo Postal</label>
+                    <input type="text" class="form-control" [(ngModel)]="customer.postal_code" name="postal_code">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Pais</label>
+                    <input type="text" class="form-control" [(ngModel)]="customer.country" name="country">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" [(ngModel)]="customer.phone" name="phone">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Fax</label>
+                    <input type="text" class="form-control" [(ngModel)]="customer.fax" name="fax">
+                </div>
+                <div class="mb-3 text-center">
+                    <button (click)="Actualizar()" class="btn btn-danger">Actualizar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Clientes</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="text-center">
+                        <th>Empresa</th>
+                        <th>Contacto</th>
+                        <th>Rol Contacto</th>
+                        <th>Direccion</th>
+                        <th>Ciudad</th>
+                        <th>Region</th>
+                        <th>Codigo Postal</th>
+                        <th>Pais</th>
+                        <th>Telefono</th>
+                        <th>Fax</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let customer of customers" class="text-center">
+                        <td>{{customer.company_name}}</td>
+                        <td>{{customer.contact_name}}</td>
+                        <td>{{customer.contact_title}}</td>
+                        <td>{{customer.address}}</td>
+                        <td>{{customer.city}}</td>
+                        <td>{{customer.region}}</td>
+                        <td>{{customer.postal_code}}</td>
+                        <td>{{customer.country}}</td>
+                        <td>{{customer.phone}}</td>
+                        <td>{{customer.fax}}</td>
+                        <td>
+                            <button (click)="Editar(customer)" class="btn btn-warning">Editar</button>
+                            <button (click)="Delete(customer)" class="btn btn-danger" style="margin-left: 10px;">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
